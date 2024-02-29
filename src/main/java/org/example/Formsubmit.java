@@ -46,4 +46,53 @@ public class Formsubmit extends HttpServlet {
     public void destroy() {
         // destroy method part of lifecycle
     }
+
+    @WebServlet(name = "sessionServlet", value = "/session-servlet")
+    public static class Session extends HttpServlet {
+
+        @Override
+        public void init() {
+            // part of life cycle
+        }
+
+        @Override
+        public void doPost(HttpServletRequest request, HttpServletResponse response) {
+            response.setContentType("text/html");
+            Logger logger = Logger.getLogger(getClass().getName());
+
+            try {
+                PrintWriter out = response.getWriter();
+                String name = request.getParameter("fname");
+                String pass = request.getParameter("pswd");
+
+                if (name != null && pass != null && (name.equals("yash") && pass.equals("pass"))) {
+                    HttpSession existingSession = request.getSession(false);
+                    if (existingSession != null) {
+                        existingSession.invalidate();
+                    }
+
+                    HttpSession session = request.getSession();
+                    session.setMaxInactiveInterval(60);
+                    out.println(name + "\t" + pass);
+
+                    if (session != null) {
+                        response.sendRedirect(request.getContextPath() + "/note.txt");
+                    } else {
+                        response.sendRedirect(request.getContextPath() + "/session.jsp");
+                    }
+                } else {
+                    response.sendRedirect(request.getContextPath() + "/session.jsp");
+                }
+
+            } catch (Exception e) {
+                logger.info("Error");
+            }
+        }
+
+        @Override
+        public void destroy() {
+            // part of servlet life cycle
+        }
+    }
+
 }

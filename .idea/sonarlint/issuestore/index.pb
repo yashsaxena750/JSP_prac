@@ -24,16 +24,12 @@ G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\86
 Q.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,2\c\2cabb939da04d3de3a200bf2b575690e1a16316d
 H
 src/main/webapp/form.jsp,1\b\1b78e3fe8e10ca2fd8f8ef6240a3adc65d137bc3
-M
-src/main/java/formsubmit.java,1\3\135bd915f22c80460c3d6c7c8a5b7169c80b3683
 Y
 )src/main/java/org/example/formsubmit.java,f\2\f26b4d1eadca1569f985db5aa5871da288ad87c3
 Y
 )src/main/java/org/example/Formsubmit.java,2\e\2eb2903c5b17840bce57410f74f995518fc77096
 w
 G.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,e\d\ed67eb178d523a4b3f117dcbe0eda5196367ceec
-Å
-Q.idea/sonarlint/securityhotspotstore/1/3/135bd915f22c80460c3d6c7c8a5b7169c80b3683,7\5\75639e747a52b37fe9aab0f6540acd92ac31f5fa
 w
 G.idea/sonarlint/issuestore/b/a/ba553ac59b6707e71c75d153a30b48955826938d,8\6\86d7f9e11539c94e7297883b57657a36861eb449
 w
@@ -68,3 +64,7 @@ w
 G.idea/sonarlint/issuestore/8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482,3\0\30f9777ea696a18aa49d3e9967e93a4276065227
 w
 G.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e,a\e\ae9ddf453f55affea2d6b9e3973cac1eb2efb4e1
+K
+src/main/webapp/session.jsp,6\d\6d29b9d922176f77000e30b8272a001d08342d75
+H
+src/main/webapp/note.txt,c\0\c05cdde21239ee592a868ec2abe1accfa144b5be
